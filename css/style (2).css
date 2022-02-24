@@ -1,0 +1,98 @@
+/* 1. global config 
+
+    - all margins and paddings set to 0
+*/
+* { 
+    margin: 0;
+    padding: 0;
+}
+/* 2. global style
+    
+    - set all default font family Noto Sans which you can get at google fonts
+    - set all the the line spacing to 1.4
+    - remove all anchor tag underline
+    - set a default margin for all paragraphs to 0.75 for top and bottom and 0 to left and right
+
+*/
+* {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.4em;
+    text-decoration: none;
+    margin: 0.75% 0;
+}
+/* 3. settings
+
+    - create a rule where you can control the maximum width of your content
+    while adapting to browser widths
+    - create a rule to center all contents under this setting
+    - create a rule to set all elements inside of this setting to have
+    a "space inside" with a "0" from top and bottom and 32px using the "rem" units
+    in left and right
+    - and lastly set a rule on overflowing elements inside to hidden.
+
+*/
+body {
+    background:#fdf6f0 ;
+}
+section {
+    width: 100%;
+    text-align: center;
+    margin-top: 0 32rem;
+    overflow: hidden;
+}
+/* 
+    4.  Collaborative Task for Assessment
+
+    4.1  Your goal is to apply pertinent rules to produce same result(output)
+    as what the figure displays in assessment_output.png.
+
+    Color Values
+    - #f8e2cf
+    - #ff7600
+    - #fdf6f0
+    - #333
+*/
+#about .row-1,
+.row-2, .row-3 {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 20px;
+}
+#about .plot {
+    float: right;
+}
+.row {
+    background: rgba(92, 4, 4, 0.014);
+    overflow: hidden;
+    height: 600px;
+    z-index: 2;
+}
+.icon {
+    background:#f8e2cf ;
+    padding: 15px;
+    border-radius: 1.9rem;
+}
+.text {
+    color: #ff7600;
+}
+.container {
+
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+        }
+        #about .plot {
+            width: 250px;
+        }
+i {
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+h3 {
+ padding-bottom: 10px;
+}
+ 
